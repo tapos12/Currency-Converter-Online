@@ -6,7 +6,7 @@ The program accepts four parameters for the /convert endpoint:
 - **amount**: the amount to convert
 - **src_currency**: ISO currency code for source currency
 - **dest_currency**: ISO currency code for destination currency
-- **referce_date**: date for the exchange rate in YYYY-MM-DD format.
+- **reference_date**: date for the exchange rate in YYYY-MM-DD format.
 
 The output is a json object of **amount** and the **destination currency**.
 
@@ -22,4 +22,5 @@ The output is a json object of **amount** and the **destination currency**.
 - Flask framework
 - libraries are included in requirements.txt. Please install via `pip install -r requirements.txt`
 - Run the `python app.py`
-- open on the browser `localhost:5000/convert`
+- open on the browser `localhost:5000/convert` (with approapriate parameter
+e.g., `localhost:5000/convert?src_currency=GBP&dest_currency=EUR&amount=30&reference_date=2020-03-19`)
