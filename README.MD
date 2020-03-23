@@ -10,6 +10,12 @@ The program accepts four parameters for the /convert endpoint:
 
 The output is a json object of **amount** and the **destination currency**.
 
+###File structure
+- Dockerfile, to containerize the project
+- app.py, main python file
+- saved_currency.pickle, saved currency information from the link as a dictionary
+- test_converter.py, sample automated test for some functionalities
+
 ### Requirements
 
 - Python 3.x 
